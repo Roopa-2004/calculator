@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DoCode – Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><a href="index.html">DoCode</a></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#tutorials">Tutorials</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About&nbsp;Us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <input id="searchInput" type="search" placeholder="Search..." />
+    <button id="loginBtn" class="primary">Log&nbsp;In</button>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to DoCode</h1>
+    <p>Your coding journey starts here.</p>
+    <div class="hero-actions">
+      <a href="#tutorials" class="btn primary">Start Learning</a>
+      <a href="#projects" class="btn secondary">Browse Projects</a>
+    </div>
+  </section>
+
+  <section id="tutorials" class="section">
+    <h2>Tutorials</h2>
+    <div class="filters">
+      <select id="difficultyFilter">
+        <option value="all">All Difficulties</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+      <select id="topicFilter">
+        <option value="all">All Topics</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="cpp">C++</option>
+      </select>
+    </div>
+    <div id="tutorialCards" class="card-grid"></div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <h2>Projects</h2>
+    <div id="projectCards" class="card-grid"></div>
+
+  </section>
+
+  <section id="faq" class="section">
+    <h2>FAQ &amp; Help</h2>
+    <details>
+      <summary>How do I start a tutorial?</summary>
+      <p>Select a tutorial and click “Start Tutorial”.</p>
+    </details>
+    <details>
+      <summary>How do I rate a project?</summary>
+      <p>Open a project and choose the number of stars, then leave a comment.</p>
+    </details>
+  </section>
+
+  <style>
+  .feedback-box {
+    background: #fff;
+    padding: 20px;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  .feedback-box h3 {
+    margin-top: 0;
+    color:black;
+  }
+  .feedback-box textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .feedback-box .btn {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .feedback-box .btn:hover {
+    background-color: #0066ff;
+  }
+</style>
+
+<section class="feedback-box">
+  <h3>Leave Your Feedback</h3>
+  <textarea placeholder="Write your thoughts..." rows="4"></textarea>
+  <button class="btn">Submit</button>
+</section>
+
+
+  <footer id="contact" class="footer">
+    <p>Contact us: <a href="mailto:support@docode.dev">support@docode.dev</a></p>
+    <p>&copy; 2025 DoCode. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
+
+
